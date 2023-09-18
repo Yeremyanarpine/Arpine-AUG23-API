@@ -1,0 +1,489 @@
+{
+	"id": "790d05ce-d247-426d-9aa7-1f5efc4a6638",
+	"name": "ASK_Tests",
+	"timestamp": "2023-09-16T01:25:18.854Z",
+	"collection_id": "23186595-459e1524-9870-49c8-ae0b-50b9a77776ce",
+	"folder_id": 0,
+	"environment_id": "23186595-5546c6af-eab9-4023-a09e-6e7df8864c1b",
+	"totalPass": 32,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-09-16T01:25:16.046Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "802eb3fe-74ad-44c0-9905-c390c156e90c",
+			"name": "/sign-in-[T]",
+			"url": "http://ask-qa.portnov.com/api/v1/sign-in",
+			"time": 141,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Body matches user role": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches user role": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				141
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Body matches user role": true
+				}
+			]
+		},
+		{
+			"id": "62482bf4-0623-4274-8bce-e491af97baec",
+			"name": "/sign-in-[S]",
+			"url": "http://ask-qa.portnov.com/api/v1/sign-in",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 500ms": true,
+				"Body matches user role": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 500ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches user role": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 500ms": true,
+					"Body matches user role": true
+				}
+			]
+		},
+		{
+			"id": "b481f5e7-ea3a-42fb-b0b7-1c984af7b9da",
+			"name": "/sign-in-[S]-Status 404",
+			"url": "http://ask-qa.portnov.com/api/v1/sign-in",
+			"time": 95,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Validate error message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate error message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Validate error message": true
+				}
+			]
+		},
+		{
+			"id": "32b0703c-c8a7-481b-b031-f1bd4cd0be77",
+			"name": "/quiz-[T]-Create quiz",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "62bf9220-7ffc-4748-adeb-bf998b052f57",
+			"name": "/quiz-[T]-Updates quiz",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz",
+			"time": 37,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				37
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true
+				}
+			]
+		},
+		{
+			"id": "455cd6d0-0ac6-450d-99b0-ac4b86f931d2",
+			"name": "/quizzes-[T]-List of quizzes",
+			"url": "http://ask-qa.portnov.com/api/v1/quizzes",
+			"time": 167,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000 ms": true,
+				"Verify response contains quiz number": true,
+				"Verify response contains updated quiz name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000 ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify response contains quiz number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify response contains updated quiz name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000 ms": true,
+					"Verify response contains quiz number": true,
+					"Verify response contains updated quiz name": true
+				}
+			]
+		},
+		{
+			"id": "aaab7cb5-15f5-47f2-a407-1f791ff646fa",
+			"name": "/assignment-[T]-Create new assignment",
+			"url": "http://ask-qa.portnov.com/api/v1/assignment",
+			"time": 31,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Verify status, result, and gradedBy before submission": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status, result, and gradedBy before submission": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Verify status, result, and gradedBy before submission": true
+				}
+			]
+		},
+		{
+			"id": "c5952935-58bc-47d6-ac6f-0c9b7ed6f9ae",
+			"name": "/submit-assignment-[S]",
+			"url": "http://ask-qa.portnov.com/api/v1/submit-assignment",
+			"time": 32,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Verify status, result gradedBy after submission": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status, result gradedBy after submission": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Verify status, result gradedBy after submission": true
+				}
+			]
+		},
+		{
+			"id": "16cf205e-ed4b-4e19-a417-84fadd7e21f1",
+			"name": "/assignment/Id-[T]-Manually graded",
+			"url": "http://ask-qa.portnov.com/api/v1/assignment/19639",
+			"time": 995,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Verify status, result gradedBy after manual grading": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify status, result gradedBy after manual grading": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				995
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Verify status, result gradedBy after manual grading": true
+				}
+			]
+		},
+		{
+			"id": "3f701c1f-f6a9-4835-bce9-8f99d87e22b3",
+			"name": "/assignment/:assignGroupId-[T]",
+			"url": "http://ask-qa.portnov.com/api/v1/assignment/68bebc79-dfe9-4243-ad2f-abad6dd554c6",
+			"time": 38,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Response body matches string - Assignment was deleted": true,
+				"Verify message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body matches string - Assignment was deleted": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				38
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Response body matches string - Assignment was deleted": true,
+					"Verify message": true
+				}
+			]
+		},
+		{
+			"id": "0b7ec719-053c-4cdd-bfae-f8ad517cc4b2",
+			"name": "/quiz/id-[T]-delete quiz",
+			"url": "http://ask-qa.portnov.com/api/v1/quiz/16282",
+			"time": 74,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 2000ms": true,
+				"Verify message": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 2000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify message": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				74
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 2000ms": true,
+					"Verify message": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1671,
+	"collection": {
+		"requests": [
+			{
+				"id": "802eb3fe-74ad-44c0-9905-c390c156e90c",
+				"method": "POST"
+			},
+			{
+				"id": "62482bf4-0623-4274-8bce-e491af97baec",
+				"method": "POST"
+			},
+			{
+				"id": "b481f5e7-ea3a-42fb-b0b7-1c984af7b9da",
+				"method": "POST"
+			},
+			{
+				"id": "32b0703c-c8a7-481b-b031-f1bd4cd0be77",
+				"method": "POST"
+			},
+			{
+				"id": "62bf9220-7ffc-4748-adeb-bf998b052f57",
+				"method": "PUT"
+			},
+			{
+				"id": "455cd6d0-0ac6-450d-99b0-ac4b86f931d2",
+				"method": "GET"
+			},
+			{
+				"id": "aaab7cb5-15f5-47f2-a407-1f791ff646fa",
+				"method": "POST"
+			},
+			{
+				"id": "c5952935-58bc-47d6-ac6f-0c9b7ed6f9ae",
+				"method": "POST"
+			},
+			{
+				"id": "16cf205e-ed4b-4e19-a417-84fadd7e21f1",
+				"method": "PUT"
+			},
+			{
+				"id": "3f701c1f-f6a9-4835-bce9-8f99d87e22b3",
+				"method": "DELETE"
+			},
+			{
+				"id": "0b7ec719-053c-4cdd-bfae-f8ad517cc4b2",
+				"method": "DELETE"
+			}
+		]
+	}
+}
